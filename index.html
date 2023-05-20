@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <section class="top center">
+        <div class="top__content">
+            <h1 class="top__heading">Добро пожаловать на мой сайт !</h1>
+            <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <strong>поехали</strong> и <strong>приступай</strong></p>
+            <a href="#game" class="top__button">Поехали!</a>
+        </div>
+    </section>
+    <div id="game" class="menu-game center">
+        <a href="#game1" class="menu-game__item menu-game__item_1">Игра 1</a>
+        <a href="#game2" class="menu-game__item menu-game__item_2">Игра 2</a>
+        <a href="#game3" class="menu-game__item menu-game__item_3">Игра 3</a>
+    </div>
+    <section id="game1" class="game center">
+        <div class="game__content">
+            <h2 class="game__heading">Времена года</h2>
+            <p class="game__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <a href="#" class="game__button" onclick="game1()">Играть!</a>
+        </div>
+        <img src="img/seasons.svg" alt="game 1" class="game__img">
+    </section>
+    <section id="game2" class="game game2 center"> 
+        <div class="game__content">
+            <h2 class="game__heading">Запомни слова</h2>
+            <p class="game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <a href="#" class="game__button" onclick="game2()">Играть!</a>
+        </div>
+        <img src="img/words.svg" alt="game2" class="game__img">
+    </section>
+    <section id="game3" class="center"> 
+        <div class="game3">
+            <h2 class="game__heading">Игра в загадки</h2>
+            <p class="game__text game__text_3">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <a href="#" class="game__button" onclick="game3()">Играть!</a>
+        </div>
+    </section>
+    <footer>
+        <p class="footer">Все права защищены</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
